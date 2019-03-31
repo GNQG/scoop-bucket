@@ -1,0 +1,33 @@
+{
+    "homepage": "https://zaquestion.github.io/lab/",
+    "version": "0.15.3",
+    "license": "Unlicensed",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/zaquestion/lab/releases/download/v0.15.3/lab_0.15.3_windows_386.tar.gz",
+            "hash": "9645a1f7094de675278fdcabf8f2bceaa7bb1c182b3e752b60f676b4b7560f37"
+        },
+        "64bit": {
+            "url": "https://github.com/zaquestion/lab/releases/download/v0.15.3/lab_0.15.3_windows_amd64.tar.gz",
+            "hash": "5bd90132a3d8ed2476eedfaeeb7d59685976289cf141f7dc1e40cff7279746d2"
+        }
+    },
+    "bin": "lab.exe",
+    "checkver": {
+        "github": "https://github.com/zaquestion/lab"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/zaquestion/lab/releases/download/v$version/lab_$version_windows_386.tar.gz"
+            },
+            "64bit": {
+                "url": "https://github.com/zaquestion/lab/releases/download/v$version/lab_$version_windows_amd64.tar.gz"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/zaquestion/lab/releases/download/v$version/lab_$version_checksums.txt",
+            "re": "([a-fA-F0-9]{64})\\s+$basename"
+        }
+    }
+}
