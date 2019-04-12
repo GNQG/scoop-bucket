@@ -26,7 +26,7 @@ if ($Update -or $ForceUpdate) {
     $current_hash = @()
 
     Get-ChildItem -LiteralPath $Dir -Filter "$App.json" | ForEach-Object {
-        $current_hash += @{Name=$_.Name ; Hash= (Get-FileHash $_).Hash}
+        $current_hash += @{Name=$_.FullName ; Hash= (Get-FileHash $_.FullName).Hash}
     }
 }
 
@@ -39,7 +39,7 @@ if ($Update -or $ForceUpdate) {
             $manifest = Get-Content -Raw $_.Name | ConvertFrom-Json
             $version_table = get_version_substitutions $manifest.version $null
             update_manifest_prop "bin" $manifest $version_table
-            [System.IO.File]::WriteAllLines($_, (ConvertToPrettyJson $manifest))
+            [System.IO.File]::WriteAllLines($_.Name, (ConvertToPrettyJson $manifest))
         }
     }
 }
