@@ -5,13 +5,14 @@ tools.
 
 ## Manifests
 
-- [circleci-cli](https://circleci.com/docs/2.0/local-cli/)
-- [lab](https://zaquestion.github.io/lab/)
 - [busybox-core](https://frippery.org/busybox)
 
     Same as [`busybox`](https://github.com/lukesampson/scoop/blob/master/bucket/busybox.json)
     in main bucket, but `bin` entry contains no aliases (contains only
     `busybox.exe`.)
+- [circleci-cli](https://circleci.com/docs/2.0/local-cli/)
+- [lab](https://zaquestion.github.io/lab/)
+- [pijul](https://pijul.org/)
 
 ## `checkver.ps1` (experimental)
 

@@ -1,0 +1,31 @@
+{
+    "homepage": "https://pijul.org/",
+    "description": "A version control system based on patches",
+    "version": "0.11.0",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://pijul.org/releases/pijul-0.11.0.exe#/pijul.exe",
+                "https://pijul.org/releases/vcruntime140.dll"
+            ],
+            "hash": [
+                "01500eabf9c563a4d2e26c187d3182e84f160e6bf097a6961187179efd20a3b0",
+                "56de253172b2ff70ba89cc0544e09c6dd34d6793231c09aa6dfaac755535f45f"
+            ]
+        }
+    },
+    "bin": "pijul.exe",
+    "depends": "openssl",
+    "checkver": {
+        "url": "https://pijul.org/downloads/",
+        "re": "\"/releases/pijul-(\\d+(?:.\\d+)*).exe\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://pijul.org/releases/pijul-$version.exe#/pijul.exe"
+            }
+        }
+    }
+}
