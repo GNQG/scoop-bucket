@@ -22,10 +22,19 @@ $checkver = "$scooppath_bin\checkver.ps1"
 . "$scooppath_lib\autoupdate.ps1"
 . "$scooppath_lib\manifest.ps1"
 
+if (Test-Path -PathType Container "$Dir\bucket") {
+    $manifests = Get-ChildItem -LiteralPath "$Dir\bucket" -Filter "$App.json"
+}
+
+if ($manifests){
+    $Dir = "$Dir\bucket"
+} else {
+    $manifests = Get-ChildItem -LiteralPath $Dir -Filter "$App.json"
+}
+
 if ($Update -or $ForceUpdate) {
     $current_hash = @()
-
-    Get-ChildItem -LiteralPath $Dir -Filter "$App.json" | ForEach-Object {
+    $manifests | ForEach-Object {
         $current_hash += @{Name=$_.FullName ; Hash= (Get-FileHash $_.FullName).Hash}
     }
 }
