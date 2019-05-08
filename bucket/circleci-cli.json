@@ -1,10 +1,10 @@
 {
     "homepage": "https://circleci.com/docs/2.0/local-cli/",
-    "version": "0.1.5546",
+    "version": "0.1.5607",
     "license": "MIT",
-    "url": "https://github.com/CircleCI-Public/circleci-cli/releases/download/v0.1.5546/circleci-cli_0.1.5546_windows_amd64.zip",
-    "hash": "132a0a56aeda8c9515d8a2b956e61e6976e6e1c95b089db618b666dff2179999",
-    "bin": "circleci-cli_0.1.5546_windows_amd64\\circleci.exe",
+    "url": "https://github.com/CircleCI-Public/circleci-cli/releases/download/v0.1.5607/circleci-cli_0.1.5607_windows_amd64.zip",
+    "hash": "031073e27649eec997ec1ac936ed88a74f72f2f22ec4a50f1b9feb6eddeeb594",
+    "bin": "circleci-cli_0.1.5607_windows_amd64\\circleci.exe",
     "checkver": {
         "github": "https://github.com/CircleCI-Public/circleci-cli"
     },
