@@ -17,4 +17,4 @@ tools.
 ## `checkver.ps1` (experimental)
 
 Experimental support for `bin` entry depending on the version of the tool. See
-[`circleci-cli.json`](circleci-cli.json).
+[`circleci-cli.json`](bucket/circleci-cli.json).
