@@ -10,11 +10,11 @@ tools.
     Same as [`busybox`](https://github.com/lukesampson/scoop/blob/master/bucket/busybox.json)
     in main bucket, but `bin` entry contains no aliases (contains only
     `busybox.exe`.)
-- [circleci-cli](https://circleci.com/docs/2.0/local-cli/)
-- [lab](https://zaquestion.github.io/lab/)
+- ~~[circleci-cli](https://circleci.com/docs/2.0/local-cli/)~~ (supported in main bucket)
+- ~~[lab](https://zaquestion.github.io/lab/)~~ (supported in main bucket)
 - [pijul](https://pijul.org/)
 
 ## `checkver.ps1` (experimental)
 
 Experimental support for `bin` entry depending on the version of the tool. See
-[`circleci-cli.json`](bucket/circleci-cli.json).
+[`circleci-cli.json`](https://github.com/GNQG/scoop-bucket/blob/169c51f/bucket/circleci-cli.json).
