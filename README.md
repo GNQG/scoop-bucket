@@ -12,7 +12,7 @@ tools.
     `busybox.exe`.)
 - ~~[circleci-cli](https://circleci.com/docs/2.0/local-cli/)~~ (supported in main bucket)
 - ~~[lab](https://zaquestion.github.io/lab/)~~ (supported in main bucket)
-- [pijul](https://pijul.org/)
+- ~~[pijul](https://pijul.org/)~~ (no longer available)
 
 ## `checkver.ps1` (experimental)
 
